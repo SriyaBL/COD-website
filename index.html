@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+
+
+        }
+
+        .row {
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+
+        .column {
+            width: 30%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+       
+
+
+        .column img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Object Detection In Camouflaged Images</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Object Detection In Camouflaged Images</h1>
+    </header>
+
+    <div class="container">
+        <!-- Repeat this block for each row -->
+        <div class="row">
+            <div class="column">
+                <p>Input Image</p>
+                <img src="./images/input/62.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <p>Ground Truth Image</p>
+                <img src="./images/gt/62.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <p>Result Image</p>
+                <img src="./images/result/62.png" alt="Result Image">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/animal-9.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/animal-9.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/animal-9.png" alt="Result Image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/830.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/830.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/830.png" alt="Result Image">
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/449.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/449.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/449.png" alt="Result Image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/483.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/483.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/483.png" alt="Result Image">
+            </div>
+        </div>
+
+       
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/1623.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/1623.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/1623.png" alt="Result Image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/170.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/170.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/170.png" alt="Result Image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/2060.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/2060.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/2060.png" alt="Result Image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/1614.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/1614.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/1614.png" alt="Result Image">
+            </div>
+        </div>
+
+       
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/animal-12.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/animal-12.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/animal-12.png" alt="Result Image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/animal-53.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/animal-53.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/animal-53.png" alt="Result Image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/animal-41.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/animal-41.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/animal-41.png" alt="Result Image">
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/318.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/318.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/318.png" alt="Result Image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+
+                <img src="./images/input/animal-34.jpg" alt="Input Image">
+            </div>
+            <div class="column">
+                <img src="./images/gt/animal-34.png" alt="Ground Truth Image">
+            </div>
+            <div class="column">
+                <img src="./images/result/animal-34.png" alt="Result Image">
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Repeat block end -->
+
+        <!-- Repeat the above block to create a total of 20 rows -->
+
+    </div>
+
+    <!-- <footer>
+        
+    </footer> -->
+
+</body>
+
+</html>
